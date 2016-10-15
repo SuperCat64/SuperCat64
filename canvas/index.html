@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>color of the ranbow</title>
+<style>
+body {
+  font-family: sans-serif;
+  color: #FBF5E3;
+  background: #002B36;
+  margin-left: 3em;
+}
+
+img {
+  margin-left: -2em;
+  margin-bottom: -1em;
+  width: 20%;
+}
+ </style>
+
+</head>
+  <body>
+    <img src="">
+    <br><canvas></canvas>
+    <p>
+      something
+    </p>
+<script>
+var canvas = document.querySelector("canvas");
+canvas.width = 500;
+canvas.height = 120;
+var ctx = canvas.getContext("2d");
+ctx.font = "bold 30px Comic Sans MS";
+
+function drawRainbow (text,x,y) {
+  var colors = ["red","yellow","red","yellow","red"];
+  for (i = 0; i < colors.length; i++) {
+    ctx.fillStyle = colors[i];
+    ctx.fillText(text, x+ i * 3, y + i * 3);
+  }
+}
+
+drawRainbow("contra",10,70);
+</script>
+
+</body>
+</html>
+
+
