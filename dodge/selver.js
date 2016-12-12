@@ -19,7 +19,7 @@ var C = {
     "start": 500
   },
 "d": {
-  "file": "assets/dodge.png",
+  "file": "assets/bomb-bomb.png",
   "width": 64,
   "height": 64,
   "frames": 2,
@@ -67,7 +67,12 @@ class Play {
     this.player.animations.add("anim");
     this.player.animations.play("anim",C.p.fps,);
 
-    
+    this.dodge = this.add.sprite(C.d.startx,C.d.starty,"dodge");
+    this.dodge.anchor.set(0.5,0.5);
+    this.dodge.smooted = false;
+    this.dodge.scale.set(1);
+    this.dodge.animations.add("anim");
+    this.dodge.animatinos.play("anim",C.d.fps,true);
 
   }
 }
