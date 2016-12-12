@@ -72,7 +72,7 @@ class Play {
     this.dodge.smooted = false;
     this.dodge.scale.set(1);
     this.dodge.animations.add("anim");
-    this.dodge.animatinos.play("anim",C.d.fps,true);
+    this.dodge.animations.play("anim",C.d.fps,true);
 
   }
 }
