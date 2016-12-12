@@ -16,7 +16,7 @@ var C = {
     "height: 64,
     "frames": 2,
     "startx": 160,
-    "starty": 500
+    "start": 500
   },
 "d": {
   "file": "assets/dodge.png",
