@@ -45,7 +45,7 @@ class Boot {
 class Load{
   preload(){
     console.log("Loading...");
-    this.load.image("bg,",C.bg.file)
+    this.load.image("bg",C.bg.file)
     this.load.spritesheet("player",C.p.file,C.p.width,C.p.height,C.p.frames);
     this.load.spritesheet("dodge",C.p.file,C.p.width,C.p.height,C.p.frames);
   }
