@@ -12,9 +12,9 @@ var C = {
   },
   "p": {
     "file": "assets/snowmin.png",
-    "width": 46,
-    "height": 64,
-    "frames": 2,
+    "width": 21,
+    "height": 25,
+    "frames":12,
     "startx": 160,
     "start": 500
   },
@@ -51,7 +51,7 @@ class Load{
   }
   create(){
     console.log("Loading");
-    this.state.state.start("Play")
+    this.state.start("Play")
   }
 }
 class Play {
