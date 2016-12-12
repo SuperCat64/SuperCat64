@@ -13,7 +13,7 @@ var C = {
   "p": {
     "file": "assets/snowmin.png",
     "width": 46,
-    "height: 64,
+    "height": 64,
     "frames": 2,
     "startx": 160,
     "start": 500
