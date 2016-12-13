@@ -74,7 +74,21 @@ class Play {
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
 
+    this.cursors = this.input.keyboard.createCursoKeys();
   }
+  update() {
+    if (this.cursors.left.isDown) {
+      this.player.x -= C.p.speed;
+    }
+    if (this.cursors.right.isDown) {
+      this.player.x += C.p.speed;
+    }
+  }
+
+  render() {
+    game.debug.text("x:"+ this.dodge.x +",y:"+ this.dodge.y, 4, 16);
+  }
+
 }
 
 
