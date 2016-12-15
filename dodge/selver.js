@@ -83,6 +83,12 @@ class Play {
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
     }
+    if(this dodge.y > this.game.height) {
+    this.dodge.y = C.d.stary
+    this.dodge.x = randInt(C.game.width);
+    }
+    this.dodge.y += C.d.speed;
+
   }
 
   render() {
@@ -96,6 +102,10 @@ class Play {
 
 function restart() {
   game.state.start("Boot");
+}
+
+function readInt(mix) {
+  return Math.floor(Math.random() * Max);
 }
 
 var game = new Phaser.Game(320,568);
