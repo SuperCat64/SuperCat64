@@ -77,7 +77,7 @@ class Play {
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
 
-    this.cursors = this.input.keyboard.createCursoKeys();
+    this.cursors = this.input.keyboard.createCursorieys();
   }
   update() {
     if (this.cursors.left.isDown) {
@@ -86,7 +86,7 @@ class Play {
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
     }
-    if(this dodge.y > this.game.height) {
+    if(this.dodge.y > this.game.height) {
     this.dodge.y = C.d.starty
     this.dodge.x = randInt(C.game.width);
     }
