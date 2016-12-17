@@ -16,7 +16,8 @@ var C = {
     "height": 25,
     "frames":12,
     "startx": 160,
-    "start": 500
+    "start": 500,
+    "speed": 5
   },
 "d": {
   "file": "assets/bomb-bomb.png",
@@ -25,7 +26,9 @@ var C = {
   "frames": 2,
   "fps": 10,
   "startx": 160,
-  "starty": 32,
+  "starty": -32,
+  "speed": 15
+
  }
 }
 
@@ -84,7 +87,7 @@ class Play {
       this.player.x += C.p.speed;
     }
     if(this dodge.y > this.game.height) {
-    this.dodge.y = C.d.stary
+    this.dodge.y = C.d.starty
     this.dodge.x = randInt(C.game.width);
     }
     this.dodge.y += C.d.speed;
@@ -104,8 +107,8 @@ function restart() {
   game.state.start("Boot");
 }
 
-function readInt(mix) {
-  return Math.floor(Math.random() * Max);
+function randInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
 var game = new Phaser.Game(320,568);
