@@ -92,7 +92,7 @@ class Play {
     let max = C.game.width - px
     let min = 0 + px
     let newx = randInt(max);
-    let (newx <min){ newx = min }
+    let (newx < min){ newx = min }
     this.dodge.x = newx;
     }
     this.dodge.y += C.d.speed;
